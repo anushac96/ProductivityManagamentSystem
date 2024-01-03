@@ -9,8 +9,8 @@ body {
  
  .timer-container {
   position: relative;
-  width: 200px; /* Adjust the width and height for your circle */
-  height: 200px;
+  width: 500px; /* Adjust the width and height for your circle */
+  height: 500px;
   border: 10px solid black; /* Set the border thickness and color */
   border-radius: 50%; /* Make it a circle */
  }

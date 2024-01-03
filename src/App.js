@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import Todo from './Todo';
 
 function Timer({ setTimerState }) {
   const [time, setTime] = useState(1500);
@@ -39,8 +40,7 @@ function Timer({ setTimerState }) {
   };
 
   return (
-    
-    <div>
+    <div> 
       <h1>Timer</h1>
       <h2>
         {Math.floor(time / 60)}:{time % 60 < 10 ? '0' : ''}
@@ -49,6 +49,7 @@ function Timer({ setTimerState }) {
       {!timerRunning && <button onClick={startTimer}>Start</button>}
       {timerRunning && <button onClick={pauseTimer}>Pause</button>}
       <button onClick={resetTimer}>Reset</button>
+      <Todo />
     </div>
   );
 }
